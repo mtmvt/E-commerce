@@ -1,0 +1,485 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #d0d0d0;
+}
+
+.Navbar .cart-count {
+  margin-top: -37px;
+  margin-left: -42px;
+}
+
+.Navbar .active {
+  color: white;
+}
+
+.Navbar ul li {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.Navbar .logo h1 {
+  font-family: 'Pacifico', cursive;
+}
+
+.Navbar button:active {
+  color: black !important;
+}
+
+/* hero */
+
+.Hero .left-col::after {
+  content: "";
+  background: #00000087;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+.Hero .left-col img {
+  height: 45rem;
+}
+
+.Hero p.tag {
+  font-size: 4rem;
+  font-family: 'Exo 2', sans-serif;
+  text-shadow: 1px 1px 11px #00000091;
+}
+
+.Hero p.date {
+  line-height: 0;
+  text-shadow: 1px 1px 11px #00000091;
+}
+
+.Hero p.sub-tag {
+  text-shadow: 1px 1px 11px #00000091;
+}
+
+/* popluar */
+.Popular {
+  z-index: 40;
+  position: relative;
+  margin-top: -1rem !important;
+  background-color: #E5E7E6;
+  background-image: url("../src/Assets/bg-extra.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Popular .title {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* Offers */
+.Offers .right-col img {
+  width: 30rem;
+}
+
+.Offers .left-col button img {
+  display: none;
+}
+
+.Offers .left-col button:hover img {
+  display: block;
+}
+
+.Offers p.tag-line {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* NewCollections */
+.NewCollections {
+  width: 97%;
+}
+
+.NewCollections p.new-collection {
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* .carousel-item .Item {
+  width: 100%;
+} */
+
+.carousel-item.active {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#carouselExampleInterval button {
+  box-shadow: 2px 2px 6px #000000eb;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  bottom: -41px;
+  top: unset;
+}
+
+/* NewsLetter */
+.NewsLetter {
+  background-color: #E5E7E6;
+  min-height: 40vh;
+  background-image: url("../src/Assets/bg-extra3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.NewsLetter h1 {
+  font-family: 'Exo 2', sans-serif;
+  line-height: .8;
+}
+
+.Footer .logo p {
+  font-family: 'Pacifico', cursive;
+}
+
+.Footer .icons img:hover {
+  transform: scale(1.1);
+}
+
+/* LoginSignup */
+
+.LoginSignUp body {
+  background-color: #f2e8e4;
+  margin: 2em;
+}
+
+.LoginSignUp main {
+  display: flex;
+  justify-content: center;
+}
+
+.LoginSignUp main img {
+  width: 85%;
+  margin: auto;
+
+}
+
+.LoginSignUp form,
+.LoginSignUp p,
+.LoginSignUp .social-sign-up {
+  width: 70%;
+}
+
+.LoginSignUp form h4 {
+  color: #553b08;
+  padding-bottom: 1em;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.LoginSignUp form .form-control {
+  background-color: #e5e2e9;
+  opacity: 0.7;
+  margin-bottom: 1.5em;
+}
+
+.LoginSignUp form .submit-btn {
+  background-color: #75420e;
+  color: #fff;
+  width: 100%;
+}
+
+.LoginSignUp form .submit-btn:hover {
+  background-color: #f2e8e4;
+  color: #75420e;
+  border: 1px solid #75420e;
+}
+
+.LoginSignUp p {
+  color: #aaa;
+}
+
+.LoginSignUp .hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.LoginSignUp .hr-lines:before {
+  content: " ";
+  height: 2px;
+  width: 150px;
+  background: #aaa;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.LoginSignUp .hr-lines:after {
+  content: " ";
+  height: 2px;
+  width: 150px;
+  background: #aaa;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.LoginSignUp .sign-in {
+  margin: .5em 0;
+  text-align: center;
+}
+
+/* ProductDisplay */
+
+.ProductDisplay .imgWrapper .left-container img {
+  margin: 0 auto;
+}
+
+.ProductDisplay .imgWrapper {
+  width: 55%;
+}
+
+.ProductDisplay .button button:active {
+  background-color: orange !important;
+  outline: none;
+  border: none;
+}
+
+.ProductDisplay .social-icons {
+  height: 2.3vh;
+}
+
+.ProductDisplay #lens {
+  transition: left 0.2s ease, top 0.2s ease;
+}
+
+/* RelatedProducts */
+
+.RelatedProducts .w-96 {
+  width: 27rem;
+}
+
+.cart-items .details .name-detail {
+  width: 30rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .carousel-item .Item {
+    width: 100%;
+  }
+
+  .HomeCategory .upper-section p {
+    margin: auto !important;
+  }
+
+  .HomeCategory .upper-section select {
+    margin: auto !important;
+  }
+
+  .HomeCategory .banner {
+    display: none;
+  }
+
+  .Popular .Item {
+    width: fit-content;
+  }
+
+  .carousel-item .d-flex {
+    flex-direction: column;
+  }
+
+  .Footer ul {
+    flex-wrap: wrap;
+  }
+
+  .NewsLetter {
+    flex-direction: column;
+  }
+
+  .NewCollections {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column-reverse;
+  }
+
+  .Navbar ul {
+    gap: 1.5rem !important;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Navbar button.toggle {
+    font-size: 1.8rem;
+  }
+
+  .Navbar .btn {
+    justify-content: center;
+  }
+
+  .ProductDisplay {
+    flex-direction: column;
+  }
+
+  .ProductDisplay .cart button.btn {
+    width: 100%;
+  }
+
+  .RelatedProducts .w-96 {
+    width: fit-content;
+  }
+
+  .ProductDisplay .imgWrapper {
+    width: 100%;
+  }
+
+  .ProductDisplay .w-2\/4 {
+    width: 100%;
+  }
+
+  .ProductDisplay .right-container {
+    padding-right: 0;
+  }
+
+  .Product h1.flex {
+    flex-wrap: wrap;
+  }
+
+  .Offers {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    gap: 1rem;
+  }
+
+  .NewsLetter .col-1 {
+    width: 100%;
+  }
+
+  .LoginSignUp main {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .LoginSignUp main img {
+    width: 100%;
+  }
+
+  .LoginSignUp form,
+  .LoginSignUp p,
+  .LoginSignUp .social-sign-up {
+    width: 100%;
+  }
+
+  .LoginSignUp .hr-lines {
+    margin: 1rem 0;
+  }
+
+  .LoginSignUp .hr-lines:before {
+    width: 130px;
+  }
+
+  .LoginSignUp .hr-lines:after {
+    width: 130px;
+  }
+
+  .CartItems {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .CartItems .w-3\/5 {
+    width: 100%;
+  }
+
+  .shoppingDetails {
+    flex-direction: column;
+  }
+
+  .shoppingDetails .details {
+    flex-direction: column;
+  }
+
+  .shoppingDetails .w-2\/5 {
+    width: 100%;
+  }
+
+  .cart-items .details .name-detail {
+    width: 100%;
+  }
+
+  .shoppingDetails .price {
+    align-items: flex-start;
+    margin-top: .5rem;
+  }
+
+  .Hero .content p.text-2xl {
+    line-height: 1.4;
+  }
+
+  .Hero p.tag {
+    font-size: 2.5rem;
+    line-height: 1.1;
+  }
+
+  .HomeCategory .main-section {
+    margin: 1rem;
+  }
+
+  .HomeCategory .main-section .Item {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .shoppingDetails .details {
+    flex-direction: column;
+  }
+
+  .carousel-item .Item {
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .cart-items .details .name-detail {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width:1176px) {
+  .cart-items .details .name-detail {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width:790px) {
+  .cart-items .details .name-detail {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width:1437px) {
+  .carousel-item .Item {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width:1264px) {
+  .carousel-item .Item {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width:982px) {
+  .NewCollections {
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+}
